@@ -36,49 +36,60 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(367, 166);
+            this.btnSubmit.Location = new System.Drawing.Point(163, 54);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 0;
             this.btnSubmit.Text = "Click Me";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // lblInstruction
             // 
             this.lblInstruction.AutoSize = true;
-            this.lblInstruction.Location = new System.Drawing.Point(531, 278);
+            this.lblInstruction.BackColor = System.Drawing.Color.Transparent;
+            this.lblInstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstruction.ForeColor = System.Drawing.Color.White;
+            this.lblInstruction.Location = new System.Drawing.Point(12, 31);
             this.lblInstruction.Name = "lblInstruction";
-            this.lblInstruction.Size = new System.Drawing.Size(123, 13);
+            this.lblInstruction.Size = new System.Drawing.Size(145, 13);
             this.lblInstruction.TabIndex = 1;
             this.lblInstruction.Text = "Please Enter Your Name";
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(367, 262);
+            this.txtInput.Location = new System.Drawing.Point(163, 28);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(100, 20);
+            this.txtInput.Size = new System.Drawing.Size(81, 20);
             this.txtInput.TabIndex = 2;
             // 
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(534, 331);
+            this.lblMessage.BackColor = System.Drawing.Color.Transparent;
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.ForeColor = System.Drawing.Color.White;
+            this.lblMessage.Location = new System.Drawing.Point(12, 58);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(50, 13);
+            this.lblMessage.Size = new System.Drawing.Size(57, 13);
             this.lblMessage.TabIndex = 3;
             this.lblMessage.Text = "Message";
+            this.lblMessage.Click += new System.EventHandler(this.lblMessage_Click);
             // 
             // MainForm
             // 
             this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Part_3b___Getting_Input.Properties.Resources.Black_Boys_2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(256, 102);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.lblInstruction);
             this.Controls.Add(this.btnSubmit);
             this.Name = "MainForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Getting Input";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
